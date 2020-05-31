@@ -1,0 +1,24 @@
+.mui-icon{
+	color: red;
+}
+
+.mui-content>div{
+	margin: 0.9375rem 0rem;
+}
+
+img{
+	width: 5.625rem;
+	height: 5.625rem;
+}
+
+a{
+	color: red;
+}
+
+a:active{
+	color: red;
+}
+
+.login{
+	width: 90%;
+}

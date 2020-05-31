@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>home</title>
+		<script src="../../js/mui.min.js"></script>
+		<link href="../../css/mui.css" rel="stylesheet"/>
+		<link href="../../css/public.css" type="text/css" rel="stylesheet"/>
+		<link href="../../css/main/about.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+		  	mui.init();
+		</script>
+		<script type="text/javascript" src="../../js/main/page.js"></script>
+		<script type="text/javascript" src="../../js/main/message.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-back mui-pull-left mui-action-back"></a>
+			<h1 class="mui-title">消息</h1>
+		</header>
+		<div class="mui-content mui-scroll-wrapper scroll">
+			<div class="mui-scroll">
+				<ul class="mui-table-view tblv-nl mt15">
+					<li id="notify" class="mui-table-view-cell findbythree">
+						<a class="mui-navigate-right">
+							<image class="img_msg" src="../../images/notify.png"></image>
+							<div class="ml60">
+								<h5 class="fs18 cor-000">通知消息</h5>
+								<p>点击查看</p>
+							</div>
+						</a>
+					</li>
+					<li id="system" class="mui-table-view-cell findbythree">
+						<a class="mui-navigate-right">
+							<image class="img_msg" src="../../images/notice.png"></image>
+							<div class="ml60">
+								<h5 class="fs18 cor-000">系统消息</h5>
+								<p>点击查看</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a id="home" class="mui-tab-item mui-active" href="home.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a id="unit" class="mui-tab-item mui-active" href="unit.html">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">机构</span>
+			</a>
+			<a id="message" class="mui-tab-item" href="message.html">
+				<span class="mui-icon mui-icon-chatbubble"></span>
+				<span class="mui-tab-label">消息</span>
+			</a>
+			<a id="setting" class="mui-tab-item" href="setting.html">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+		</nav>
+	</body>
+</html>
+
+

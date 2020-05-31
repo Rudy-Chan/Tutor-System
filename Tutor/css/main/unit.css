@@ -1,0 +1,17 @@
+.avatar {
+	width: 24px;
+	height: 24px;
+	min-width: 24px!important;
+	min-height: 24px!important;
+	border-radius: 50%;
+	margin: 0 5px 0 0;
+	position: relative;
+	top: -2px;
+}
+
+.flex2 {
+	display: flex;
+	justify-content: space-between;
+	width:auto;
+	align-content: center;
+}

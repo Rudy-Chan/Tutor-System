@@ -1,0 +1,62 @@
+mui.ready(function() {
+	document.getElementById("unitName").textContent=localStorage.getItem("un_unitName");
+	document.getElementById("manager").textContent="负责人:"+localStorage.getItem("un_manager");
+	document.getElementById("buildDate").textContent=localStorage.getItem("un_buildDate");
+	document.getElementById("category").textContent="类别:"+localStorage.getItem("un_category");
+	document.getElementById("address").textContent="地址："+localStorage.getItem("un_address");
+	document.getElementById("phone").textContent="联系电话："+localStorage.getItem("un_phone");
+	document.getElementById("email").textContent="邮箱:"+localStorage.getItem("un_email");
+	document.getElementById("introduction").textContent="简介:"+localStorage.getItem("un_introduction");
+	
+	var unitId=localStorage.getItem("un_unitId");
+	var token=localStorage.getItem("token");
+	document.getElementById("reject").addEventListener('click',function(){
+		mui.ajax('http://localhost/admin.php',{
+			data:{
+				action:'rejectUnit',
+				unitId:unitId,
+				token:token,
+			},
+			dataType:'json',//服务器返回json格式数据
+			type:'post',//HTTP请求类型
+			timeout:10000,//超时时间设置为10秒；
+			success:function(data){
+				if(data.error==0){
+					mui.toast(data.msg);
+				}
+				else{
+					mui.toast(data.msg);
+				}
+			},
+			error:function(xhr,type,errorThrown){
+				//异常处理
+				mui.toast("验证超时，请重试");
+			}
+		});
+	})
+	
+	document.getElementById("pass").addEventListener('click',function(){
+		mui.ajax('http://localhost/admin.php',{
+			data:{
+				action:'passUnit',
+				unitId:unitId,
+				token:token,
+			},
+			dataType:'json',//服务器返回json格式数据
+			type:'post',//HTTP请求类型
+			timeout:10000,//超时时间设置为10秒；
+			success:function(data){
+				if(data.error==0){
+					mui.toast(data.msg);
+				}
+				else{
+					mui.toast(data.msg);
+				}
+			},
+			error:function(xhr,type,errorThrown){
+				//异常处理
+				mui.toast("验证超时，请重试");
+			}
+		});
+	})
+})

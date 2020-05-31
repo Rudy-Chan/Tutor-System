@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>login</title>
+		<script src="../../js/mui.min.js"></script>
+		<link href="../../css/mui.css" rel="stylesheet"/>
+		<link href="../../css/public.css" type="text/css" rel="stylesheet"/>
+		<link href="../../css/login/forgetPwd.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+		  	mui.init();
+		</script>
+		<script type="text/javascript" src="../../js/login/forgetPwd.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-back mui-pull-left mui-action-back"></a>
+		</header>
+		<div class="mui-content mui-content-padded">
+			<div>
+				<img src="http://localhost/upload/logo.jpg"/>
+			</div>
+			<div>
+				<h3>重置密码</h3>
+			</div>
+			<form class="mui-input-group">
+			    <div class="mui-input-row">
+			        <label>邮箱</label>
+					<input id="input_email" type="text" class="mui-input-clear" placeholder="请输入邮箱地址"/>
+			    </div>
+			    <div class="mui-button-row">
+			        <button id="btn_verify" type="button" class="mui-btn mui-btn-danger">获取验证码</button>
+			    </div>
+			</form>
+		</div>
+	</body>
+</html>

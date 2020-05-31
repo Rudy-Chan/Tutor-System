@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>发帖</title>
+		<script src="../../js/mui.min.js"></script>
+		<link href="../../css/mui.css" rel="stylesheet"/>
+		<link href="../../css/public.css" type="text/css" rel="stylesheet"/>
+		<link href="../../css/main/publish.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+		  	mui.init();
+		</script>
+		<script type="text/javascript" src="../../js/main/unitPage.js"></script>
+		<script type="text/javascript" src="../../js/main/unitActivity.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">活动发布</h1>
+			<button type="button" class="mui-pull-right" id="release">发布</button>
+		</header>
+		<div class="mui-content bg-fff mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="mui-input-row">
+					<input id="theme" type="text" class="mui-input-clear" placeholder="标题">
+				</div>
+				<div class="mui-input-row">
+					<input id="keywords" type="text" class="mui-input-clear" placeholder="关键字">
+				</div>
+				<div class="mui-input-row">
+					<input id="location" type="text" class="mui-input-clear" placeholder="地址">
+				</div>
+				<div class="mui-input-row">
+				    <label style="font-size:14px;">开始日期</label>
+					<input id="startDate" type="date">
+				</div>
+				<div class="mui-input-row">
+				    <label style="font-size:14px;">结束日期</label>
+					<input id="endDate" type="date">
+				</div>
+				<div class="mui-input-row">
+					<input id="hour" type="text" class="mui-input-clear" placeholder="工时">
+				</div>	
+				<div class="mui-input-row">
+					<input id="score" type="text" class="mui-input-clear" placeholder="学分">
+				</div>
+				<div class="mui-input-row">
+					<input id="needNum" type="text" class="mui-input-clear" placeholder="所需人数">
+				</div>
+				<div class="mui-input-range">
+					<textarea id="introduction" rows="6"  placeholder="请输入正文"></textarea>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a id="home" class="mui-tab-item mui-active" href="unitHome.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a id="activity" class="mui-tab-item mui-active" href="unitActivity.html">
+				<span class="mui-icon mui-icon-flag"></span>
+				<span class="mui-tab-label">活动</span>
+			</a>
+			<a id="message" class="mui-tab-item" href="unitMessage.html">
+				<span class="mui-icon mui-icon-chatbubble"></span>
+				<span class="mui-tab-label">消息</span>
+			</a>
+			<a id="setting" class="mui-tab-item" href="unitSetting.html">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+		</nav>
+	</body>
+</html>

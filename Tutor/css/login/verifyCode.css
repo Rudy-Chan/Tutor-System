@@ -1,0 +1,12 @@
+.num{
+	background-color: black;
+	border-width: thick;
+}
+
+a{
+	font-size: 0.875rem;
+}
+
+#btn_sure{
+	width: 90%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>login</title>
+		<script src="../../js/mui.min.js"></script>
+		<link href="../../css/mui.css" rel="stylesheet"/>
+		<link href="../../css/public.css" type="text/css" rel="stylesheet"/>
+		<link href="../../css/main/content.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+		  	mui.init();
+		</script>
+		<script type="text/javascript" src="../../js/admin/userDetail.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-back mui-pull-left mui-action-back"></a>
+			<h1 class="mui-title">用户信息</h1>
+		</header>
+		<div class="mui-content" id="pullrefresh" style="padding-bottom:50px ;">
+			<div class="mui-scroll" id="bbsDetail">
+				<header>
+					<h4 id="userName">心如晴空</h4>
+					<p class="flex2">
+						<span>
+	                		<img class="avatar mui-pull-left" src="http://localhost/upload/self.jpg"/>
+	                		<span id="nickName">用户昵称</span>
+	                	</span>
+						<time id="registerDate">2020-03-15 12:02</time>
+					</p>
+				</header>
+				<div class="mainBody">
+					<span id="phone">联系电话：12354645789</span><br/>
+					<span id="email">邮箱：154687@163.com</span>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab bg_ededed" id="bottomTag">
+			<a class="mui-tab-item" id="reject">
+				<span class="mui-icon iconfont icon-comment bottomBtn"></span>
+				<span class="mui-tab-label" id="commentNum">拒绝</span>
+			</a>
+			<a class="mui-tab-item" id="pass">
+				<span class="mui-icon iconfont icon-share bottomBtn"></span>
+				<span class="mui-tab-label">通过</span>
+			</a>
+		</nav>
+	</body>
+</html>
+

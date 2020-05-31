@@ -1,0 +1,21 @@
+.mui-btn{
+	width: 90%;
+}
+
+#a_pwdLogin{
+	font-size: 0.875rem;
+}
+
+p{
+	color: black;
+	font-size: 0.75rem;
+	margin: 0px auto;
+}
+
+#a_declare{
+	color: black;
+}
+
+#a_declare:active{
+	color: black;
+}

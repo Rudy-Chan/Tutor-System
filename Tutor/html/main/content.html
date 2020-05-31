@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>login</title>
+		<script src="../../js/mui.min.js"></script>
+		<link href="../../css/mui.css" rel="stylesheet"/>
+		<link href="../../css/public.css" type="text/css" rel="stylesheet"/>
+		<link href="../../css/main/content.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" charset="utf-8">
+		  	mui.init();
+		</script>
+		<script type="text/javascript" src="../../js/main/content.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-back mui-pull-left mui-action-back"></a>
+			<h1 class="mui-title">活动详情</h1>
+		</header>
+		<div class="mui-content" id="pullrefresh" style="padding-bottom:50px ;">
+			<div class="mui-scroll" id="bbsDetail">
+				<header>
+					<h4 id="theme"></h4>
+					<p class="flex2">
+						<span>
+	                		<img class="avatar mui-pull-left" src="http://localhost/upload/self.jpg"/>
+	                		<span id="relationUnit">用户昵称</span>
+	                	</span>
+						<time id="publishDate">2020-03-15 12:02</time>
+					</p>
+				</header>
+				<div class="mainBody">
+					<span id="keywords"></span>
+					<img src="http://localhost/upload/home.jpg" alt="" />
+					<span id="introduction"></span>
+					<img src="http://localhost/upload/ac.jpg" alt="" /> 
+					<span id="manager" class="summary"></span>
+					<br/><span id="startDate" class="summary"></span>
+					<br/><span id="endDate" class="summary"></span>
+					<br/><span id="hour" class="summary"></span>
+					<br/><span id="score" class="summary"></span>
+					<br/><span id="location" class="summary"></span>
+					<br/><span id="needNum" class="summary"></span>
+					<br/><span id="actualNum" class="summary"></span>
+					<br/><span id="remark" class="summary"></span>
+				</div>
+				<p class="commentTitle flex2">
+					<span><i class="sign"></i>评论</span>
+					<button id="onlySee">只看作者回复</button>
+				</p>
+				
+				<div id="commentList">
+					
+				</div>
+			</div>
+		</div>
+		<div class="editComment bottom5 bg_ededed" id="commentInput">
+			<textarea class="editInput" id="edit" name="" rows="1" cols="" placeholder="写评论"></textarea>
+			<button type="button" class="commentBtn" id="submit">提交</button>
+			<span id="oneComment"></span>
+		</div>
+		<nav class="mui-bar mui-bar-tab bg_ededed" id="bottomTag">
+			<a class="mui-tab-item mui-active" id="commentBtn">
+				<span class="mui-icon iconfont icon-comment bottomBtn"></span>
+				<span class="mui-tab-label" id="commentNum">评论</span>
+			</a>
+			<a class="mui-tab-item" id="apply">
+				<span class="mui-icon iconfont icon-share bottomBtn"></span>
+				<span class="mui-tab-label">申请</span>
+			</a>
+		</nav>
+	</body>
+</html>
+
