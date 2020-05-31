@@ -3,7 +3,7 @@
 header("content-type:text/json;charset=utf-8"); //设置网页编码
 $db_host = "localhost";//主机名
 $db_user = "root";//用户名
-$db_pass = "0013428248";//密码
+$db_pass = "root";//密码
 $db_name = "tutor";//数据库名
 $conn=@mysqli_connect($db_host, $db_user, $db_pass);
 //设置客户端字符集对象
